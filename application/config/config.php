@@ -80,7 +80,7 @@ define("DB_CHARSET", "utf8mb4");
 
 define("EMAIL_HOST", "smtp.gmail.com");
 define("EMAIL_USERNAME", "pvs20231013@gmail.com");
-define("EMAIL_PASSWORD", "tpxowjcepuvaency");
+define("EMAIL_PASSWORD", "");
 define("EMAIL_SMTP_SECURE", "ssl");
 define("EMAIL_PORT", "465");
 
@@ -91,7 +91,7 @@ define("APP_NAME", "Landing Page Builder");
 define("APP_VERSION", "0.1.0");
 define("DIR_MODEL_PAGE", APP . 'model/page/');
 define("DIR_MODEL_CUSTOM", APP . 'model/custom/');
-define("DALL_E_API_KEY", "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");
+define("DALL_E_API_KEY", "");
 
 /**
  * Set default time zone.
