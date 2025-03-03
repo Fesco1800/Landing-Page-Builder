@@ -1,4 +1,4 @@
-# RMS - Codebase
+# LPB - Codebase
 
 This uses a simple Model-View-Controller (MVC) framework which is designed to develop modular features.
 
