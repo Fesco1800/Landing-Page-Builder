@@ -1,0 +1,106 @@
+// var textFieldModal = new bootstrap.Modal(
+//   document.getElementById("textFieldModal")
+// );
+
+// // Function to handle adding a text field
+// function handleAddFieldButtonClick() {
+//   var contactFormDragDropArea = document.getElementById(
+//     "contact-form-drag-drop-area"
+//   );
+
+//   var hasSignUpFormDiv =
+//     contactFormDragDropArea.querySelector("#signup-form-div");
+//   var hasContactFormDiv =
+//     contactFormDragDropArea.querySelector("#contact-form-div");
+
+//   var placeholder = document.getElementById("placeholderInput").value;
+//   var inputType = document.getElementById("inputTypeInput").value;
+
+//   if (
+//     !placeholder ||
+//     !inputType ||
+//     !["text", "email", "phone"].includes(inputType.toLowerCase())
+//   ) {
+//     alert(
+//       "Please enter valid placeholder and input type (text, email, phone, etc.)."
+//     );
+//     return;
+//   }
+
+//   var droppedContent = document.createElement("div");
+//   var textFieldLabel = document.createElement("label");
+//   var textFieldInput = document.createElement("input");
+
+//   textFieldInput.type = inputType.toLowerCase();
+//   textFieldInput.name = inputType.toLowerCase();
+//   textFieldInput.placeholder = placeholder;
+//   textFieldInput.required = true;
+//   textFieldInput.style.display = "block";
+//   textFieldInput.style.margin = "10px auto";
+//   textFieldInput.style.width = "55%";
+//   textFieldInput.style.height = "50px";
+//   textFieldInput.style.padding = "0.5rem";
+//   textFieldInput.style.borderRadius = "0.3rem";
+
+//   if (hasSignUpFormDiv) {
+//     textFieldInput.style.border = "solid #09a9f7 1px";
+//   } else if (hasContactFormDiv) {
+//     textFieldInput.style.border = "solid #fd5d87 1px";
+//   }
+
+//   droppedContent.appendChild(textFieldLabel);
+//   droppedContent.appendChild(textFieldInput);
+
+//   // Append delete button to dropped content
+//   var deleteButton = document.createElement("button");
+//   deleteButton.type = "button";
+//   deleteButton.textContent = "Delete";
+//   deleteButton.style.color = "#d11a2a";
+//   deleteButton.classList.add(
+//     "bottom-section-delete-button",
+//     "btn",
+//     "btn-primary",
+//     "no-bg"
+//   );
+
+//   deleteButton.addEventListener("click", function () {
+//     deleteElement(droppedContent);
+//   });
+//   droppedContent.appendChild(deleteButton);
+
+//   document
+//     .getElementById("contact-form-drag-drop-area")
+//     .appendChild(droppedContent);
+
+//   textFieldModal.hide();
+
+//   console.log("Dropped Text Field");
+// }
+
+// document
+//   .getElementById("addFieldButton")
+//   .addEventListener("click", handleAddFieldButtonClick);
+
+// // Function to handle dropping text field
+// function textField() {
+//   var contactFormDragDropArea = document.getElementById(
+//     "contact-form-drag-drop-area"
+//   );
+
+//   // Check if either "signup-form-div" or "contact-form-div" exists inside "contact-form-drag-drop-area"
+//   var hasSignUpFormDiv =
+//     contactFormDragDropArea.querySelector("#signup-form-div");
+//   var hasContactFormDiv =
+//     contactFormDragDropArea.querySelector("#contact-form-div");
+
+//   if (!hasSignUpFormDiv && !hasContactFormDiv) {
+//     var fieldsErrorMessageModal = new bootstrap.Modal(
+//       document.getElementById("fieldsErrorMessageModal")
+//     );
+//     fieldsErrorMessageModal.show();
+//     return;
+//   }
+
+//   // Show the Bootstrap modal
+//   textFieldModal.show();
+// }

@@ -1,0 +1,162 @@
+:root {
+  --primary-color: #fdc3cf;
+  --primary-color-hover: #fab1c0;
+  --secondary-color: #fde5eb;
+  --border-color: #fdc3cf;
+  --white: #ffffff;
+  --gray: #909090;
+  --black: #333333;
+  --background: #d4d4d4;
+}
+/* Hotel Booking */
+/* Step 1 */
+
+.hotel-container,
+.hotel-container .row {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+}
+
+.left-container {
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.hotel-text-container {
+  text-align: center;
+}
+
+.hotel-text-container .container-fluid {
+  padding-top: 0 !important;
+}
+
+.clock-time {
+  display: flex;
+  justify-content: center;
+  color: var(--gray);
+}
+
+.notes-container {
+  text-align: left;
+  font-size: 12px;
+}
+
+.notes-header {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.right-container {
+  background: var(--white);
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* .right-container h3 {
+  margin: auto;
+  margin-top: 30px;
+} */
+
+.right-container .calendar {
+  height: 100%;
+}
+
+.appointment-date,
+.datepicker-inline {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.datepicker .datepicker-days {
+  height: 100%;
+}
+
+.datepicker .table-condensed {
+  width: 100%;
+  height: 100%;
+}
+
+.datepicker table tr td.active.active {
+  background: var(--primary-color);
+}
+
+.datepicker table tr td.active.active:hover {
+  background: var(--primary-color-hover);
+}
+
+.selected-time-and-confirm .selected-time {
+  background: var(--primary-color);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.time-slot {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0px 12px 30px 0px #5858581a;
+}
+
+.time-slot:hover,
+.time-slot.selected {
+  background-color: var(--secondary-color);
+  /* color: var(--white); */
+}
+
+.step-1-confirm-button,
+.step-2-confirm-button {
+  border: 1px solid var(--primary-color);
+  color: var(--black);
+}
+
+.step-1-confirm-button:hover,
+.step-2-confirm-button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Step 2 */
+
+/* .wedding-date .datepicker {
+  width: 200px;
+  height: 200px;
+} */
+
+.step-2 .left-container,
+.step-2 .right-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.step-2 .appointment-details {
+  font-size: 14px;
+  color: var(--gray);
+}
+.step-2 .appointment-details i {
+  margin-right: 8px;
+}
+.step-2 .details-form input,
+.step-2 .details-form textarea {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.step-2 .confirm-button {
+  background-color: #fdc3cf;
+  border: 1px solid #fdc3cf;
+  color: #fff;
+  border-radius: 5px;
+}
+.step-2 .confirm-button:hover {
+  background-color: #fff;
+  color: #fdc3cf;
+}

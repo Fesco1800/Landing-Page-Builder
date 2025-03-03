@@ -1,0 +1,56 @@
+[15-Mar-2024 13:55:06 Asia/Singapore] deletePreview
+[15-Mar-2024 13:55:06 Asia/Singapore] Request parameters: Array
+(
+    [url] => landing-page-builder/deletePreview/
+    [id] => NzI=
+    [bottomSectionId] => c2lnbnVwLWZvcm0tZGl2
+    [logoName] => NjVmM2UyYWNhZDAwYV8xNzEwNDgyMDkyX2ljZSBjcmVhbSBsb2dvLW1pbi5wbmc=
+    [bannerName] => NjVmM2UyYWNhZDAxMl8xNzEwNDgyMDkyX2ljZSBjcmVhbSBiYW5uZXItbWluLmpwZw==
+)
+
+[15-Mar-2024 13:55:06 Asia/Singapore] Decoded parameters: id=72, bottomSectionId=signup-form-div, logoName=65f3e2acad00a_1710482092_ice cream logo-min.png, bannerName=65f3e2acad012_1710482092_ice cream banner-min.jpg
+[15-Mar-2024 13:55:06 Asia/Singapore] deletePreview result: Success
+[15-Mar-2024 13:55:06 Asia/Singapore] Logo deleted successfully: file/preview-uploads/65f3e2acad00a_1710482092_ice cream logo-min.png
+[15-Mar-2024 13:55:06 Asia/Singapore] Banner deleted successfully: file/preview-uploads/65f3e2acad012_1710482092_ice cream banner-min.jpg
+[15-Mar-2024 13:55:32 Asia/Singapore] deletePreview
+[15-Mar-2024 13:55:32 Asia/Singapore] Request parameters: Array
+(
+    [url] => landing-page-builder/deletePreview/
+    [id] => null
+    [bottomSectionId] => null
+    [logoName] => null
+    [bannerName] => null
+)
+
+[15-Mar-2024 13:55:32 Asia/Singapore] Decoded parameters: id=žée, bottomSectionId=žée, logoName=žée, bannerName=žée
+[15-Mar-2024 13:55:32 Asia/Singapore] PHP Warning:  PDOStatement::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '??e' at line 1 in C:\new\htdocs\rms-dev-3-modules\application\libs\database.php on line 142
+[15-Mar-2024 13:55:32 Asia/Singapore] deletePreview result: Failure
+[15-Mar-2024 13:55:32 Asia/Singapore] Error deleting preview.
+[15-Mar-2024 13:59:59 Asia/Singapore] deletePreview
+[15-Mar-2024 13:59:59 Asia/Singapore] Request parameters: Array
+(
+    [url] => landing-page-builder/deletePreview/
+    [id] => NzM=
+    [bottomSectionId] => c2lnbnVwLWZvcm0tZGl2
+    [logoName] => NjVmM2UyZjI4MDA1N18xNzEwNDgyMTYyX2ljZSBjcmVhbSBsb2dvLW1pbi5wbmc=
+    [bannerName] => NjVmM2UyZjI4MDA2OV8xNzEwNDgyMTYyX2ljZSBjcmVhbSBiYW5uZXItbWluLmpwZw==
+)
+
+[15-Mar-2024 13:59:59 Asia/Singapore] Decoded parameters: id=73, bottomSectionId=signup-form-div, logoName=65f3e2f280057_1710482162_ice cream logo-min.png, bannerName=65f3e2f280069_1710482162_ice cream banner-min.jpg
+[15-Mar-2024 13:59:59 Asia/Singapore] deletePreview result: Success
+[15-Mar-2024 13:59:59 Asia/Singapore] Logo deleted successfully: file/preview-uploads/65f3e2f280057_1710482162_ice cream logo-min.png
+[15-Mar-2024 13:59:59 Asia/Singapore] Banner deleted successfully: file/preview-uploads/65f3e2f280069_1710482162_ice cream banner-min.jpg
+[15-Mar-2024 14:00:04 Asia/Singapore] deletePreview
+[15-Mar-2024 14:00:04 Asia/Singapore] Request parameters: Array
+(
+    [url] => landing-page-builder/deletePreview/
+    [id] => null
+    [bottomSectionId] => null
+    [logoName] => null
+    [bannerName] => null
+)
+
+[15-Mar-2024 14:00:04 Asia/Singapore] Decoded parameters: id=žée, bottomSectionId=žée, logoName=žée, bannerName=žée
+[15-Mar-2024 14:00:04 Asia/Singapore] PHP Warning:  PDOStatement::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '??e' at line 1 in C:\new\htdocs\rms-dev-3-modules\application\libs\database.php on line 142
+[15-Mar-2024 14:00:04 Asia/Singapore] deletePreview result: Failure
+[15-Mar-2024 14:00:04 Asia/Singapore] Error deleting preview.

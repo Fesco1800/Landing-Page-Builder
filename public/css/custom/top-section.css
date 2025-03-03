@@ -1,0 +1,130 @@
+/*
+Navbar and Hero
+*/
+
+#top-section-container {
+  background: transparent;
+  border: 2px dashed #09a9f7;
+  width: 98%;
+  height: 480px;
+  /* text-align: center;
+  justify-content: center; */
+  overflow: auto;
+}
+
+#top-section-container .hero-placeholder {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 460px;
+  padding-top: 10px !important;
+}
+
+#top-section-container .navbar div {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+#top-section-container .navbar a span {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+/* #top-section-container .page-title-container .page-title-placeholder {
+  color: #ffffff;
+  font-size: 2rem;
+} */
+
+#top-section-container .navbar a:hover {
+  color: #222222;
+  text-decoration: none;
+}
+
+#top-section-container .navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  color: #ffffff;
+}
+
+#top-section-container .navbar li {
+  position: relative;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#top-section-container .navbar > ul > li {
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+}
+
+.headings-container {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#heading-drop-area {
+  width: 50%;
+  /* height: 3.5rem; */
+  /* padding-bottom: 180px; */
+}
+
+#sub-heading-drop-area {
+  width: 70%;
+  /* height: 1.5rem; */
+}
+
+/* Logo Resize, Page Title Toolbar Styles */
+
+.logo-resize-container,
+.page-title-edit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Label for the box */
+.logo-resize-label {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+/* Resize button styles */
+.logo-resize-btn,
+.page-title-toolbar-btn {
+  cursor: pointer;
+  font-size: 12px;
+  /* padding: 8px 12px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 2px;
+  background-color: #f0f0f0;
+}
+
+.logo-resize-btn:hover,
+.page-title-toolbar-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.logo-resize-btn i,
+.page-title-toolbar-btn i {
+  font-size: 12px;
+}
+
+/* Page Title Toolbar Styles */
+
+.page-title-text-color {
+  /* width: 20px; 
+  height: 20px;  */
+  border: none;
+  cursor: pointer;
+}

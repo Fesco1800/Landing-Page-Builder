@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Photo Editor</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="./lib/style.css">
+        <link rel="stylesheet" href="./vendor/cropper.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+            integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="./vendor/jquery.fontpicker.css" rel="stylesheet">
+        <script src="./vendor/jquery.fontpicker.js"></script>
+        <script>
+            jQuery.fn.outerHTML = function () {
+                return jQuery('<div />').append(this.eq(0).clone()).html();
+            };
+            Number.prototype.countDecimals = function () {
+                if (Math.floor(this.valueOf()) === this.valueOf()) return 0;
+                return this.toString().split(".")[1].length || 0;
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.3/fabric.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.css">
+
+        <script src="./vendor/grapick.min.js"></script>
+        <link rel="stylesheet" href="./vendor/grapick.min.css">
+
+        <script src="./vendor/undo-redo-stack.js"></script>
+        <script src="./vendor/cropper.js"></script>
+
+        <script src="./lib/core.js"></script>
+        <script src="./lib/toolbar.js"></script>
+        <script src="./lib/canvas.js"></script>
+        <script src="./lib/canvasSettings.js"></script>
+        <script src="./lib/shapes.js"></script>
+
+        <script src="./lib/freeDrawSettings.js"></script>
+        <script src="./lib/selectionSettings.js"></script>
+
+        <script src="./lib/drawingLine.js"></script>
+        <script src="./lib/drawingPath.js"></script>
+        <script src="./lib/drawingText.js"></script>
+        <script src="./lib/tip.js"></script>
+        <script src="./lib/upload.js"></script>
+        <script src="./lib/copyPaste.js"></script>
+        <script src="./lib/removeBackground.js"></script>
+        <script src="./lib/utils.js"></script>
+        <script src="./lib/zoom.js"></script>
+        <script src="./lib/saveInBrowser.js"></script>
+    </head>
+
+<div class="container-fluid">
+    <div class="row">
+        <body style="background: transparent !important;">
+            <div id="image-editor-container">
+                <div class="modal" id="crop-modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Image Cropper</h5>
+                                <button type="button" id="close-btn" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body pb-1" id="crop-modal-body">
+                                <div class="crop-image-container">
+                                    <div class="preview-image-container">
+                                        <img id="preview-image" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="crop-button-container d-flex">
+                                <a class="btn btn-outline-primary btn-sm circle-crop">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-circle" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    </svg>
+                                </a>
+                                <a class="btn btn-outline-primary btn-sm free-crop">
+                                    Free
+                                </a>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary btn-sm save-button"
+                                    style="display: none;">Save Changes</button>
+                                <button type="button" class="btn btn-primary btn-sm save-button1"
+                                    style="display: none;">Save Changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </body>
+        <script src="./script.js"></script>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+<script>
+    //Tooltip 
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+</script>
+
+</html>

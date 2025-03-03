@@ -1,0 +1,47 @@
+/* 
+Template Builder (Main, col-9) 
+*/
+
+.template-top-section {
+  background: lightgray;
+  height: 600px;
+}
+
+.template-mid-section {
+  background: lightgray;
+  height: 450px;
+}
+
+.template-bottom-section {
+  background: lightgray;
+  height: 450px;
+}
+
+/* 
+Template Right Panel (col-3) 
+*/
+
+.template-right-panel-container {
+  background: #ffffff;
+  border: 1px;
+  border-radius: 6px 6px 0 0;
+  padding: 8px;
+}
+
+.template-right-panel-container .row .col-12 {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.template-right-panel-container .row .col-12 > * {
+  margin: 5px;
+}
+
+.template-right-panel-container .row .col-12 button {
+  border-radius: 50%;
+}
+
+.template-right-panel-container .row .col-12 button i {
+  font-size: 20px;
+}

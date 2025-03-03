@@ -1,0 +1,234 @@
+/* For Grapick color-gradient picker */
+
+#gradientColorInput,
+#midGradientColorInput {
+  display: none;
+  width: 85%;
+  /* max-width: 360px; */
+  /* height: 200px; */
+  margin: auto;
+  margin-top: 85px;
+}
+
+#gradientColorInput .graphick-container,
+#midGradientColorInput .graphick-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grapick-cont {
+  /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); */
+  border-radius: 3px;
+  margin: -15px;
+  padding: 25px 15px;
+  width: 360px;
+  min-height: 100px;
+  background: white;
+}
+
+.grp-preview {
+  border-radius: 3px;
+}
+
+.grp-wrapper {
+  height: 40px !important;
+}
+
+.grp-inputs {
+  margin: 25px 0px 15px;
+  display: flex;
+}
+
+.grp-form-control {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 30px;
+  width: 49%;
+}
+.grp-copy-grid {
+  display: flex;
+}
+.txt-value {
+  flex-grow: 1;
+  background-color: #f1f1f1;
+  padding: 5px 7px;
+  color: #555;
+  min-height: 30px;
+}
+.grp-select-btn {
+  margin-left: 5px;
+  background-color: #4491a1;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+.txt-value,
+.grp-select-btn {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.grp-select-btn svg {
+  height: 20px;
+  fill: currentColor;
+}
+
+#imageGallery {
+  width: 100%;
+  height: 200px;
+  border: solid white 1px;
+  margin-top: 50px;
+}
+
+/* For Abstract Images */
+
+/* modified grid gallery class */
+.gg-container {
+  --gap-length: 9px;
+  --row-height: 150px;
+  --column-width: 200px;
+}
+
+.gg-box-img-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: pulse 2.5s infinite;
+}
+
+.gg-box-img-container.loaded::before {
+  content: none;
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.gg-box-img-container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.gg-box-img-container.loaded > img {
+  opacity: 1 !important;
+}
+
+.gg-box-img-container > img {
+  opacity: 0 !important;
+  transition: opacity 200ms ease-in-out;
+}
+
+.gg-box-img-container img {
+  display: block;
+  /* transition: 0.5s ease; */
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background: none;
+}
+
+.gg-box-img-button-container {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* .gg-box-img-container:hover .gg-box-img-container img {
+  opacity: 0.3 !important;
+}
+
+.gg-box-img-container img:hover {
+  opacity: 0.6 !important;
+} */
+
+.gg-box-img-container:hover .gg-box-img-button-container {
+  opacity: 1;
+}
+
+.gg-box-img-button-container button {
+  align-items: center;
+  appearance: none;
+  background-color: #3eb2fd;
+  background-image: linear-gradient(1deg, #4f58fd, #149bf3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 15px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  /* font-family: CircularStd, sans-serif; */
+  font-size: 1rem;
+  height: 27px;
+  width: 120px;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, background-position 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.gg-box-img-button-container button:active,
+.button-21:focus {
+  outline: none;
+}
+
+.gg-box-img-button-container button:hover {
+  background-position: -20px -20px;
+}
+
+.gg-box-img-button-container button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 0.125em;
+}
+
+/* Modified Styles for Industry Images */
+
+.gg-industry-container {
+  --row-height: none;
+  --column-width: none;
+}
+
+.gg-box-industry-parent-img-container {
+  display: flex;
+}
+
+.gg-box-industry-img-container {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gg-box-industry-img-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

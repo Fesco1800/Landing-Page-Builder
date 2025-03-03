@@ -1,0 +1,66 @@
+.bottom-section {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-section .row {
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+  margin-bottom: 50px;
+}
+
+/* Cursor */
+#add-signup-form:disabled,
+#add-contact-form:disabled {
+    cursor: not-allowed;
+}
+
+#contact-form-drag-drop-area {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: transparent;
+  border: 2px dashed #09a9f7;
+  width: 95%;
+  height: 450px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#contact-form-drag-drop-area input[type="file"],
+#contact-form-drag-drop-area .form-control {
+  text-align: left;
+}
+#contact-form-drag-drop-area .dragging {
+  opacity: 0.5;
+  cursor: move;
+}
+
+/* Image Gallery */
+#imageGallery img {
+  transition: transform 0.3s ease;
+}
+
+#imageGallery img.hovered {
+  transform: scale(1.1);
+}
+
+
+/* Quill */
+/* .ql-editor {
+  text-align: center;
+} */
+
+.ql-toolbar {
+  background: #ffffff;
+}
+
+.ql-picker-options{
+  position: relative;
+  z-index: 9999; 
+}
+
+

@@ -1,0 +1,267 @@
+/* BEGIN: template styles */
+#wrapper {
+  align-items: stretch;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* header */
+#header {
+  position: relative;
+  padding: 15px 30px 10px 45px;
+}
+
+#header .page-breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.breadcrumb-item.active {
+  font-size: 20px;
+}
+
+#userInfo {
+  cursor: pointer;
+}
+
+#userInfo .user-img {
+  width: 50px;
+}
+#userInfo .user-name,
+#userInfo .user-role {
+  max-width: 150px;
+}
+
+#header .icon-item {
+  position: relative;
+  cursor: pointer;
+}
+#header .icon-item .bi {
+  font-size: 2rem;
+}
+#header .icon-item .bi:hover {
+  color: #06a9f6;
+}
+#header .icon-item .badge {
+  position: absolute;
+  top: 10px;
+}
+/* .header */
+
+/* sidebar */
+#sidebar {
+  position: relative;
+  max-width: 250px;
+  min-width: 250px;
+  overflow: hidden;
+  background-color: #06a9f6;
+  color: #f2f2f2;
+  padding-top: 60px;
+  padding-left: 5px;
+  box-shadow: -2px 0 8px 2px #888;
+  transition: margin-left 0.2s ease-in-out, left 0.2s ease-in-out,
+    margin-right 0.2s ease-in-out, right 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+  z-index: 900;
+}
+#sidebar.toggled {
+  margin-left: -250px;
+  box-shadow: none;
+}
+
+#sidebarToggleClose,
+#sidebarToggleOpen {
+  font-size: 2.5em;
+  cursor: pointer;
+  top: 2px;
+}
+#sidebarToggleClose {
+  position: absolute;
+  right: -6px;
+}
+#sidebarToggleOpen {
+  position: fixed;
+  left: -7px;
+  z-index: 900;
+
+  color: #06a9f6;
+  background: #fff;
+  padding-right: 2px;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 1px 0 6px -3px #888;
+}
+
+#sidebarItems .nav-item {
+  width: 100%;
+}
+
+#sidebarItems .nav-item a {
+  color: #f2f2f2;
+  font-size: 1.05em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 2px;
+
+  /* text truncate */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#sidebarItems .nav-item a .bi {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+#sidebarItems .nav-item > .nav-link.active,
+#sidebarItems .nav-item > .nav-link:hover {
+  background-color: #f2f2f2;
+  color: #06a9f6;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#sidebarItems .nav-item > .nav-link.active {
+  font-weight: 500;
+}
+
+#sidebarItems .nav-item > .sub-items {
+  padding-left: 10px;
+}
+
+#sidebarItems .nav-item > a.has-sub-items:after {
+  font-family: bootstrap-icons !important;
+  content: "\f238";
+  position: absolute;
+  right: 4px;
+}
+#sidebarItems .nav-item > a.has-sub-items.collapsed:after {
+  content: "\f22c";
+}
+
+/* sidebar scroll */
+#sidebar::-webkit-scrollbar {
+  /* width */
+  width: 3px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+  /* Track */
+  background: #f2f2f2;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+  /* Handle */
+  background: #0587c5;
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+} /* Handle on hover */
+/* .sidebar scroll */
+/* .sidebar */
+
+#main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+#content {
+  position: relative;
+  padding: 15px 30px;
+}
+/* END: template styles */
+
+/* BEGIN: general styles */
+.w-120px {
+  width: 120px;
+}
+/* END: general styles */
+
+/* BEGIN: component styles */
+.rms-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 2000;
+  overflow: hidden;
+}
+
+#toast {
+  z-index: 3000;
+  right: 0;
+}
+#toast > .toast {
+  background-color: #fff;
+  font-size: 1rem;
+  width: 350px;
+}
+/* END: component styles */
+
+/* BEGIN: datatable overrides */
+.dataTables_wrapper .form-control:focus,
+.dataTables_wrapper .form-select:focus {
+  box-shadow: none;
+}
+/* END: datatable overrides */
+
+/* BEGIN: ckeditor */
+/* .rm-ckeditor-h-200 .ck-editor__editable {
+  min-height: 200px;
+} */
+
+/* for ckeditor inside modal, to fix issue not showing balloons like link/image controls, also make sure to add {data-bs-focus="false"} to modal element */
+/* body {
+  --ck-z-default: 100;
+  --ck-z-modal: calc(var(--ck-z-default) + 999);
+} */
+/* END: ckeditor */
+
+/* BEGIN: media query breakpoints */
+/* x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  #sidebar {
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    margin-left: -250px; /* closed by default */
+    box-shadow: none;
+  }
+
+  #sidebar.toggled {
+    margin-left: 0;
+    box-shadow: -2px 0 8px 2px #888;
+  }
+}
+
+/* small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+/* END: media query breakpoints */
+
+/*@media (prefers-reduced-motion: reduce) {
+	.collapsing {
+		transition-property: height, visibility;
+		transition-duration: .2s;
+	}
+}*/

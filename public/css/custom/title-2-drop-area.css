@@ -1,0 +1,84 @@
+.title-2 {
+  margin-top: 100px !important;
+}
+
+.title-2 .row .col-12 {
+  text-align: center;
+  justify-content: center;
+}
+
+.title-2 .row {
+  margin-bottom: 50px;
+}
+
+#title-2-drag-drop-area {
+  background: transparent;
+  border: 2px dashed #09a9f7;
+  width: 98%;
+  height: 450px;
+  overflow: auto;
+}
+
+/* #title-2-drag-drop-area figure {
+  text-align: center;
+  justify-content: center;
+} */
+
+/* custom ck styles */
+
+#title-2-drag-drop-area figure img {
+  width: 100%;
+  height: auto;
+}
+
+.ck {
+  z-index: 9999 !important;
+}
+
+.ck-content {
+  margin: 0;
+}
+
+.ck-button {
+  z-index: 999999 !important;
+}
+
+.media {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-style-align-left {
+  float: left;
+  margin-right: 1.5em; /* Adjust spacing as needed */
+}
+
+.image-style-align-right {
+  float: right;
+  margin-left: 1.5em; /* Adjust spacing as needed */
+}
+
+.image-style-align-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Centering block-level element */
+}
+
+/* #ckeditor-container {
+  border: none;
+  outline: none;
+  overflow: hidden;
+  width: 200px;
+  height: 100px;
+  margin-top: 50%;
+} */
+
+/* #title-2-drag-drop-area ul li {
+  display: flex;
+  justify-content: center;
+}
+
+#title-2-drag-drop-area ul li span {
+  margin-right: 10px;
+} */

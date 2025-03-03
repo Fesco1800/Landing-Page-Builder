@@ -1,0 +1,73 @@
+// document.getElementById("editButton").addEventListener("click", function () {
+//   toggleDivDisabledState("photo-editor-iframe-container");
+// });
+
+// document.getElementById("resetButton").addEventListener("click", function () {
+//   reset();
+// });
+
+// function toggleDivDisabledState(divId) {
+//   var div = document.getElementById(divId);
+//   if (div) {
+//     div.style.pointerEvents =
+//       div.style.pointerEvents === "none" ? "auto" : "none";
+//     div.style.opacity = div.style.opacity === "0.5" ? "1" : "0.5";
+//   }
+// }
+
+// function reset() {
+//   if (window.confirm("This will clear the sections! Are you sure?")) {
+//     try {
+//       const dbName = "LPBDB";
+//       const request = indexedDB.open(dbName);
+
+//       request.onupgradeneeded = function (event) {
+//         const db = event.target.result;
+
+//         // Create the object store if it doesn't exist
+//         if (!db.objectStoreNames.contains("canvasEditor")) {
+//           db.createObjectStore("canvasEditor", { keyPath: "name" });
+//         }
+//       };
+
+//       request.onsuccess = function (event) {
+//         const db = event.target.result;
+//         const transaction = db.transaction(["canvasEditor"], "readwrite");
+//         const objectStore = transaction.objectStore("canvasEditor");
+
+//         // Get all keys in the object store
+//         const getAllKeysRequest = objectStore.getAllKeys();
+
+//         getAllKeysRequest.onsuccess = function () {
+//           const keys = getAllKeysRequest.result;
+
+//           // Delete each entry in the object store
+//           keys.forEach(function (key) {
+//             objectStore.delete(key);
+//           });
+
+//           console.log("All entries deleted successfully.");
+
+//           // Close the transaction after clearing
+//           transaction.oncomplete = function () {
+//             db.close();
+//             console.log("Transaction completed, database closed.");
+
+//             // Reload the page after clearing
+//             location.reload(true); // Pass true to force a reload from the server
+//           };
+//         };
+
+//         getAllKeysRequest.onerror = function (event) {
+//           console.error("Error getting keys:", event.target.error);
+//         };
+//       };
+
+//       request.onerror = function (event) {
+//         console.error("Error opening database:", event.target.error);
+//       };
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   }
+// }
